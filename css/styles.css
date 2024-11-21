@@ -1,0 +1,184 @@
+body	{
+	background-color: #000;
+	padding-bottom: 170px;
+}
+
+nav {
+	font-family: 'Cinzel Decorative', cursive;
+	text-align: center;
+}
+
+/*override bootstrap styling logo*/
+.logo a, .navbar-inverse .navbar-brand {
+  		color: #FF1177;
+  		padding-top: 0;
+}
+
+/*applies glow on hover*/
+.logo a:hover{
+	color: #fff;
+	text-decoration: underline;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+/*makes the word "WILD" larger than the rest of the text*/
+span {
+	font-size: 40px;	
+}
+
+
+nav li, footer li{
+	display: inline;
+	font-size: 40px;
+	font-family: 'Megrim', cursive;	
+	padding-top: 10px;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #000;
+	font-family: 'Orbitron', sans-serif;
+	color: #fff;
+}
+
+.row {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	height: 100%;
+	min-height: 500PX;
+}
+
+.row a{
+	text-align: center;
+	color: #06f0d1;
+	font-size: 20px;
+	display : block;
+  	width:100px;
+  	height:40px;
+}
+
+/*fixes issue with imgs of different sizes not staying in grid properly*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+	position: relative;
+	height: 200px;
+}
+.social {
+	color: #FF1177;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social:hover {
+	color: #fff;
+	text-decoration: underline;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+.content {
+	background-color: #fff;
+	color: #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe, .frame{
+	display: none;
+
+}
+/*----------Media queries for laptop and desktop----------*/
+@media (min-width: 750px) {
+	.background {
+		background-image: url("../images/ambience3.jpg");	
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	iframe, .frame {
+		display: initial;
+	}	
+}
+
+
+/*styling for reseration page elements*/
+.reservation {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #FF1177;
+	color: #FF1177;
+	text-align: left;
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+fieldset div.errorMessage {
+   display: none;
+   color: red;
+   margin-top: 10px;
+}
+
+
+#errorText {
+   display: none;
+   text-align: center;
+   padding: 10px;
+   margin: 0 auto;
+   margin: 15px 15px 0;
+   background: rgb(124,124,136);
+   color: white;
+   border: 2px solid rgb(190,50,38);
+}
+
+input, label, select, textarea, fieldset p, div.errorMessage{
+
+   line-height: 1.2em;
+}
+
+fieldset.checks input, div.checks input {
+ 
+   margin-right: 5px;
+}
+
+fieldset.checks textarea {
+   margin-left: 21px;
+   width: 90%;
+   height: 50px;
+}
+
+div.checks label {
+   width: auto;
+   text-align: left;
+   float: none;
+   clear: none;
+}
+
+footer{
+	text-align: center;
+}
+
+footer ul {
+	margin: 0 2px;
+	padding: 0;
+	background-color: #000;
+}
+
+footer li {
+	padding: 5px 5px;
+}
+
+footer a {
+	padding: 15px 5px;
+	
+}
+
+footer li a{
+	color: #fff;
+}

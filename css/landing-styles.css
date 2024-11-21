@@ -1,0 +1,232 @@
+body	{
+	background-color: #000;
+	margin-bottom: 20px;	
+}
+
+nav {
+	font-family: 'Cinzel Decorative', cursive;
+	text-align: center;
+	height: 150px;
+	font-size: 60px;
+}
+
+
+/*override bootstrap styling logo*/
+.logo a, .navbar-inverse .navbar-brand {
+  		color: #FF1177;
+}
+
+/*applies glow on hover*/
+.logo a:hover{
+color: #fff;
+text-decoration: underline;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+/*makes the word "WILD" larger than the rest of the text*/
+span {
+	font-size: 80px;	
+}
+
+
+nav li, footer li{
+	display: inline;
+	font-size: 25px;
+	font-family: 'Megrim', cursive;	
+}
+
+nav ul, footer ul{
+		background-color: #000;
+}
+
+nav li a, footer li a{
+	color: #fff;
+}
+
+
+.row {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	display: block;
+	position:relative;
+}
+
+.row a{
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+}
+
+/*increases clikable area of <a> tag on landing page*/
+.row a:after {
+    content:'';
+    position:absolute;
+    top:-10px; bottom:-10px; 
+    left:-10px; right:-10px; 
+}
+
+
+
+/*formanttimg for  each cell in the grid system on landing page*/
+.landing {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 75px;
+	margin-bottom: 10px;
+}
+
+/*sets background images for grid on landing page*/
+.music {
+	background-image: url("../images/music.jpg");
+}
+
+.music:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/music.jpg");
+}
+
+.events{
+	background-image: url("../images/events.jpg");
+}
+
+.events:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/events.jpg");
+}
+
+.bar {
+	background-image: url("../images/bar.jpg");
+}
+
+.bar:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),	
+    url("../images/bar.jpg");
+}
+
+.reservations{
+	background-image: url("../images/0\ \(14\).jpg");
+}
+
+.reservations:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/0\ \(14\).jpg");
+}
+
+.wild-thoughts{
+	background-image: url("../images/0\ \(2\).jpeg");
+}
+
+.wild-thoughts:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/0\ \(2\).jpeg");
+}
+
+.gallery{
+	background-image: url("../images/gallery.jpg");
+}
+
+.gallery:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/gallery.jpg");
+}
+
+.social{
+	background-image: url("../images/0101.jpg");
+}
+
+.social:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/0101.jpg");
+}
+
+.contact{
+	background-image: url("../images/00.jpg"); 	
+}
+
+.contact:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/contact.jpg");
+}
+
+.directions{
+	background-image: url("../images/directions.jpg"); 	
+}
+
+.directions:hover {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/directions.jpg");
+}
+
+
+/*----------Media queries for laptop and desktop----------*/
+@media (min-width: 750px) {
+	body {
+		background-image: url("../images/entrance.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	/*empty div below nav to keep "ENTRANCE" visible*/
+	#entrance {
+		width: 100%;
+		height: 203px;	
+	}
+	
+	 .landing:focus {
+  		border: 1px solid rgb(86, 180, 239);
+  		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+  	}
+	
+	
+	.landing h3{
+	opacity: 0;
+    transition: all 0.5s;
+	 }
+	
+	.landing h3:hover {
+	opacity: 1;
+	}
+}	
+
+/*----------override bootstrap styling to allow for space between columns----------*/
+@media (min-width: 1200px) {.col-lg-4 {
+	width: 30%;
+	margin-right: 10%; 
+	}
+}
+
+@media (min-width: 768px) {
+.col-sm-6 {
+    width: 45%;
+    margin-right: 10px;
+	}
+}
+
